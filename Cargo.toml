@@ -1,0 +1,5 @@
+[workspace]
+members = [
+    "haproxy-stats",
+    "haproxy-stats-socket",
+]

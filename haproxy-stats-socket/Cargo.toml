@@ -1,0 +1,15 @@
+[package]
+name = "haproxy-stats-socket"
+version = "0.0.0"
+authors = ["vkill <vkill.net@gmail.com>"]
+edition = "2021"
+description = "HAProxy stats socket"
+license = "Apache-2.0 OR MIT"
+repository = "https://github.com/bk-rs/haproxy-rs"
+homepage = "https://github.com/bk-rs/haproxy-rs"
+documentation = "https://docs.rs/haproxy-stats-socket"
+keywords = []
+categories = []
+readme = "README.md"
+
+[dependencies]
