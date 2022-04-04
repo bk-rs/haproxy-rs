@@ -1,6 +1,6 @@
 [package]
 name = "haproxy-stats-socket"
-version = "0.0.0"
+version = "0.1.0"
 authors = ["vkill <vkill.net@gmail.com>"]
 edition = "2021"
 description = "HAProxy stats socket"
@@ -17,7 +17,7 @@ default = []
 _integration_tests = []
 
 [dependencies]
-haproxy-stats = { version = "0.0", path = "../haproxy-stats" }
+haproxy-stats = { version = "0.1", path = "../haproxy-stats" }
 
 tokio = { version = "1.17", features = ["net", "io-util"] }
 futures-util-either = { version = "0.1", default_features = false, features = ["std", "tokio_io"] }
