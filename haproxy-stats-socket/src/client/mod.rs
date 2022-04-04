@@ -7,7 +7,7 @@ use std::{
 };
 
 use futures_util_either::Either;
-use haproxy_stats::{Command, Commands};
+use haproxy_stats::Command;
 use tokio::{
     io::{AsyncReadExt as _, AsyncWriteExt as _},
     net::{TcpStream as TokioTcpStream, UnixStream as TokioUnixStream},
@@ -113,20 +113,22 @@ impl Client {
         Ok(response)
     }
 
-    pub fn send_multiple(&self, commands: Commands<'_>) -> Result<Vec<Vec<u8>>, ClientSendError> {
-        let _write_bytes = commands.to_write_bytes();
+    // TODO,
+    // pub fn send_multiple(&self, commands: Commands<'_>) -> Result<Vec<Vec<u8>>, ClientSendError> {
+    //     let _write_bytes = commands.to_write_bytes();
 
-        todo!()
-    }
+    //     todo!()
+    // }
 
-    pub async fn send_multiple_async(
-        &self,
-        commands: Commands<'_>,
-    ) -> Result<Vec<Vec<u8>>, ClientSendError> {
-        let _write_bytes = commands.to_write_bytes();
+    // TODO,
+    // pub async fn send_multiple_async(
+    //     &self,
+    //     commands: Commands<'_>,
+    // ) -> Result<Vec<Vec<u8>>, ClientSendError> {
+    //     let _write_bytes = commands.to_write_bytes();
 
-        todo!()
-    }
+    //     todo!()
+    // }
 }
 
 //
